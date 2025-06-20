@@ -1,0 +1,55 @@
+Curso = { Código , Nome, NumVagas, CargaHor, Tipo, deptID}
+
+SalaDeAula = { Id , NumDeVagas }
+
+Disciplina = { Código , Nome, AulasSema }
+
+Matricula = {id_matricula, idTurma,NomeAluno, TelefoneAluno, Dia, Mes, Ano, Status,Nota,DescontoID,BolsaID}
+
+Aluno = { NomeCompleto, Telefone, Sexo, Email, Senha, Tipo, IDUnidade, AnoNasc, DiaNasc, MesNasc, RuaEnd, CidadeEnd, CepEnd}
+
+Professor = { NomeCompleto, Telefone, Sexo, Email, Senha, Tipo, Especializacao, Titulacao, IDUnidade, AnoNasc, DiaNasc, MesNasc, RuaEnd, CidadeEnd, CepEnd}
+
+FuncionarioAdm = { NomeCompleto, Telefone, Sexo, Email, Senha, Tipo, AnoNasc, DiaNasc, MesNasc, RuaEnd, CidadeEnd, CepEnd}
+
+Turma = { Id , Capacidade, ValorTotalMatricula, DiaLimite, MesLimite, AnoLimite, IDPeríodoLetivo, IDSaladeAula, CódigoDisc, NomePr , TelefonePr}
+
+UnidadeDaEscola = { Id , Nome, IDLocalidade, RuaEnd, CepEnd, PaisEnd}
+
+PeriodoLetivo = { Id , Ano, DiaLimite, MesLimite}
+
+Mensagem = {id,  Timestamp , Texto, tipo,  NomeU , TelefoneU}
+
+Destinatários = {id, Destinatário}
+
+AvaliacaoDisciplina = { Id , Comentario, Tipo, ClassificaMaterialApoio, ClassificaRelevanciaConteudo, ClassificaInfraestrutura, NomeA, TelefoneA} 
+
+AvaliacaoProfessor = { Id , Comentario, Tipo, ClassificaDidatica, NomeA , TelefoneA}
+
+Desconto = {Id, Valor, Tipo}
+
+Regra = { RegraID , Descrição}
+
+Infraestrutura = { InfraID , Nome}
+
+Departamento = { Id , Nome}
+
+MaterialDidatico = { Id , Nome, Descrição}
+
+UnidadeDaEscola = { Id , Nome, IDLocalidade, RuaEnd, CepEnd, PaisEnd}
+
+Localidade = { Id, Nome}
+
+Responsabilidade = { NomeCompleto, Telefone, CódigoDisciplina}
+
+MateriaisDisc = {CódigoDisciplina,   IDMaterial}
+
+Requisito = {CódigoDisciplina, CódigoCurso}
+
+Composição = {CódigoDisciplina, CódigoCurso}
+
+RegraCurso = {CódigoCurso, RegraID}
+
+InfraCurso = {CódigoCurso, InfraID}
+
+Bolsa = { Id , Nome, Descrição, Instituição}

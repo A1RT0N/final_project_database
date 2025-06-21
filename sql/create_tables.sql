@@ -11,7 +11,7 @@ CREATE TABLE UnidadeDaEscola (
     IDLocalidade INTEGER REFERENCES Localidade(Id),
     RuaEnd VARCHAR(255),
     CepEnd VARCHAR(10),
-    PaisEnd VARCHAR(100)
+    PaisEnd VARCHAR(10000)
 );
 
 -- Criação da tabela Departamento
@@ -56,7 +56,7 @@ CREATE TABLE Aluno (
     DiaNasc INTEGER,
     MesNasc INTEGER,
     RuaEnd VARCHAR(255),
-    CidadeEnd VARCHAR(100),
+    CidadeEnd VARCHAR(10000),
     CepEnd VARCHAR(10),
     PRIMARY KEY (NomeCompleto, Telefone)
 );
@@ -180,7 +180,9 @@ CREATE TABLE AvaliacaoDisciplina (
     ClassificaInfraestrutura INTEGER,
     NomeA VARCHAR(255),
     TelefoneA VARCHAR(20),
-    FOREIGN KEY (NomeA, TelefoneA) REFERENCES Aluno(NomeCompleto, Telefone)
+    FOREIGN KEY (NomeA, TelefoneA) REFERENCES Aluno(NomeCompleto, Telefone),
+    CodigoDisciplina VARCHAR(20),
+    FOREIGN KEY (CodigoDisciplina) REFERENCES Disciplina(Codigo)
 );
 
 -- Criação da tabela AvaliacaoProfessor
@@ -191,7 +193,10 @@ CREATE TABLE AvaliacaoProfessor (
     ClassificaDidatica INTEGER,
     NomeA VARCHAR(255),
     TelefoneA VARCHAR(20),
-    FOREIGN KEY (NomeA, TelefoneA) REFERENCES Aluno(NomeCompleto, Telefone)
+    FOREIGN KEY (NomeA, TelefoneA) REFERENCES Aluno(NomeCompleto, Telefone),
+    NomeProf VARCHAR(255),
+    TelefoneProf VARCHAR(20),
+    FOREIGN KEY (NomeProf, TelefoneProf) REFERENCES Professor(NomeCompleto, Telefone)
 );
 
 -- Criação da tabela Regra

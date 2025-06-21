@@ -42,7 +42,7 @@ SELECT
   'Curso '||i,
   20 + (i % 15),
   30 + (i % 50),
-  CASE WHEN i % 2 = 0 THEN 'Bacharelado' ELSE 'Licenciatura' END,
+ CASE WHEN i % 2 = 0 THEN 'Fundamental' ELSE 'Médio' END,
   (i % 10)
 FROM generate_series(0,10000) AS s(i);
 

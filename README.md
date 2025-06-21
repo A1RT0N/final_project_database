@@ -51,6 +51,11 @@ source caminho/queries_views.sql;
 5. **Execute as consultas::**
 source caminho/queries.sql;
 
+**Link do Diagrama**
+https://app.diagrams.net/?splash=0#G1eLawar0bZCrlM4QZTSRGWfczY2TK8pjd#%7B%22pageId%22%3A%224B2qsMCtX4W-gn1Z2e9L%22%7D
+
+
+
 
 
 

@@ -32,9 +32,8 @@ Este repositório contém a definição de um banco de dados relacional, incluin
 
 No MySQL:
 
-```sql
 CREATE DATABASE nome_do_banco;
-USE nome_do_banco;```
+USE nome_do_banco;
 
 No PostgreSQL:
 CREATE DATABASE nome_do_banco;

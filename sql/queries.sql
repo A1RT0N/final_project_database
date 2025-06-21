@@ -1,4 +1,4 @@
--- 1) Alunos matriculados na disciplina 'D003' no período letivo 3
+-- 1) Alunos matriculados na disciplina 'D00003' no período letivo 3
 SELECT 
   m.NomeAluno, 
   m.TelefoneAluno, 
@@ -6,7 +6,7 @@ SELECT
 FROM Matricula m
 JOIN Turma t 
   ON t.Id = m.idTurma
-WHERE t.CodigoDisc       = 'D003'     -- código da disciplina 3
+WHERE t.CodigoDisc       = 'D00003'     -- código da disciplina 3
   AND t.IDPeriodoLetivo  = 3
 ORDER BY m.NomeAluno;
 
@@ -61,10 +61,10 @@ JOIN Professor p
 GROUP BY p.NomeCompleto
 ORDER BY media_didatica DESC;
 
--- 7) Materiais didáticos por disciplina (corrigido)
+-- 7) Materiais didáticos por disciplina 
 SELECT 
   d.Nome             AS disciplina,
-  array_agg(md.Nome) AS materiais
+  (array_agg(md.Nome))[1:15] AS materiais
 FROM Disciplina d
 JOIN MateriaisDisc mdx
   ON mdx.CodigoDisciplina = d.Codigo

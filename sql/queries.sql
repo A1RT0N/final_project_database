@@ -16,7 +16,7 @@ SELECT
 FROM Matricula m
 WHERE m.NomeAluno = 'Aluno 7';
 
--- 3) Professores do departamento 3 com suas disciplinas
+-- 3) Professores que ministram disciplinas que pertencem à cursos do departamento 3
 SELECT 
   p.NomeCompleto   AS professor,
   r.CodigoDisciplina AS disciplina

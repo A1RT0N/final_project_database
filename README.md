@@ -1,8 +1,8 @@
-# 📊 Projeto de Banco de Dados
+# Projeto de Banco de Dados
 
 Este repositório contém a definição de um banco de dados relacional, incluindo a criação de tabelas, inserção de dados, views e consultas SQL.
 
-## 🗂️ Estrutura dos Arquivos
+## Estrutura dos Arquivos
 
 - [`create_tables.sql`](create_tables.sql) — Criação das tabelas do banco de dados.
 - [`insert_data.sql`](insert_data.sql) — Inserção dos dados nas tabelas.
@@ -11,9 +11,9 @@ Este repositório contém a definição de um banco de dados relacional, incluin
 
 ---
 
-## 🚀 Como Executar
+##  Como Executar
 
-### ✅ Pré-requisitos
+### Pré-requisitos
 
 - Um Sistema Gerenciador de Banco de Dados (SGBD) instalado, como:
   - MySQL
@@ -26,7 +26,7 @@ Este repositório contém a definição de um banco de dados relacional, incluin
 
 ---
 
-### ⚙️ Passo a passo
+### Passo a passo
 
 1. **Crie o banco de dados:**
 

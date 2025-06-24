@@ -7,9 +7,9 @@ Este repositório contém os scripts em SQL do trabalho final da disciplina de B
 * Pedro Henrique Ferreira Silva - 14677526
 * Pedro Lucas Figueiredo Bahiense - 14675458
 
-**Link do Diagrama da modelagem MER**
-https://app.diagrams.net/?splash=0#G1eLawar0bZCrlM4QZTSRGWfczY2TK8pjd#%7B%22pageId%22%3A%224B2qsMCtX4W-gn1Z2e9L%22%7D
+**Diagrama da modelagem MER**
 
+Diagrama disponível no arquivo diagrama.pdf neste repositório
 
 ## Estrutura dos Arquivos
 

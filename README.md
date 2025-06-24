@@ -6,6 +6,7 @@ Este repositório contém a definição de um banco de dados relacional, incluin
 
 - [`create_tables.sql`](create_tables.sql) — Criação das tabelas do banco de dados.
 - [`insert_data.sql`](insert_data.sql) — Inserção dos dados nas tabelas.
+- [`index.sql`](index.sql) - Criação de índices específicos nas tabelas Aluno, Turma e Mensagem, mede seu impacto com EXPLAIN ANALYZE e exibe o espaço ocupado por cada tabela e pelos respectivos índices.
 - [`queries.sql`](queries.sql) — Consultas SQL (SELECT) para obtenção de informações.
 - [`queries_views.sql`](queries_views.sql) — Criação de views (visões) no banco.
 
